@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create My Jersey</title>
+
+<!-- Orbitron Font -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:'Orbitron', sans-serif;
+    background: linear-gradient(135deg, #6a00ff, #ff00aa);
+}
+
+/* Glass Card */
+.container{
+    background: rgba(0,0,0,0.7);
+    padding:40px;
+    border-radius:20px;
+    width:90%;
+    max-width:400px;
+    text-align:center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(255,0,170,0.6);
+}
+
+/* Title */
+h1{
+    color:white;
+    font-size:28px;
+    margin-bottom:30px;
+    letter-spacing:2px;
+}
+
+/* Inputs */
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-radius:10px;
+    outline:none;
+    font-size:14px;
+}
+
+/* Button */
+button{
+    width:100%;
+    padding:12px;
+    margin-top:15px;
+    border:none;
+    border-radius:25px;
+    background: linear-gradient(90deg, #ff00aa, #6a00ff);
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 15px #ff00aa;
+}
+
+/* Responsive Text */
+@media (max-width:500px){
+    h1{
+        font-size:20px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>CREATE MY JERSEY DESIGN</h1>
+
+    <form onsubmit="return loginUser(event)">
+        <input type="email" placeholder="Enter Email" required>
+        <input type="password" placeholder="Enter Password" required>
+        <button type="submit">SIGN IN</button>
+    </form>
+</div>
+
+<script>
+function loginUser(event){
+    event.preventDefault();
+    alert("Login Successful! 🔥");
+}
+</script>
+
+</body>
+</html>
